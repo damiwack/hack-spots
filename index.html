@@ -61,7 +61,7 @@
 
     <script id="fullTable_template" type="text/html">
       <table>
-        <tr><th class="tHeader">Producto</th><th class="tHeader">Precio</th><th class="tHeader">Stock</th><th class="tHeader">Categoria</th></tr>
+        <tr><th class="tHeader">Producto</th><th class="tHeader">Precio $</th><th class="tHeader">Stk</th><th class="tHeader">CATEGORIA</th></tr>
           {{#rows}}
             <tr><td>{{Producto}}</td><td>{{Precio $}}</td><td>{{Stk}}</td><td>{{CATEGORIA}}</td></tr>
           {{/rows}}
@@ -71,7 +71,7 @@
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
         var URL = "1VwweD4gNtxnwOUz4Eka6QumqE-0ADBHavT2H0iHIxmA"
-        Tabletop.init({key: URL, callback: showInfo, simpleSheet: true})
+        Tabletop.init({key: URL, callback: showInfo, simpleSheet: false})
       })
 
       function showInfo (data) {
